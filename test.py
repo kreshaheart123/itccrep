@@ -14,8 +14,8 @@ class ArithmeticTest(unittest.TestCase):
 # Probably add new functions?
 
 def add(x : int, y : int) -> int:
-    assert type(x) == "int"
-    assert type(y) == "int"
+    assert type(x) == int
+    assert type(y) == int
     return x + y
 
 def subtract(x : int, y: int) -> int:
