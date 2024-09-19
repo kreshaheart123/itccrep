@@ -4,9 +4,9 @@ from ElectricBill import ElectricBill
 
 class ElectircBillTest(unittest.TestCase):
 
-    def __init__(self):
+    def __init__(self, *args, **kwargs):
         # Complete the initialization of the ElectricBill object
-        super().__init__()
+        super(ElectircBillTest, self).__init__(*args, **kwargs)
         self.bill = ElectricBill()
 
     def test_VAT(self):
@@ -22,7 +22,7 @@ class ElectircBillTest(unittest.TestCase):
         pass
 
     def test_partial(self):
-        # Complete this test of the getSalary method from the Employee class
+        # Complete this test of the partial method from the ElectricBill class
         # Add a few more assertEquals
         self.assertEqual(1, 1)
         pass
@@ -31,13 +31,14 @@ class ElectircBillTest(unittest.TestCase):
         # Completet this test of the bill method from the ElectricBill class
         # Add a few more assertEquals
         self.assertEqual(1, 1)
+        pass
 
     def test_print(self):
-        # Complete this test of the __str__ method from the Employee class
+        # Complete this test of the __str__ method from the ElectricBill class
         # Add a few more assertEquals
         self.assertEqual(1, 1)
         pass
 
 
 if __name__ == "__main__":
-    unittest.TestCase()
+    unittest.main()
